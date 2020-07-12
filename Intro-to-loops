@@ -24,3 +24,30 @@ for breed in dog_breeds:
     print(breed)
     
 This will print each breed in dog_breeds.
+
+Create a For Loop
+In the previous exercise, we saw that we can print each item in a list using a for loop. A for loop lets us perform an action on each item in a list. Using each element of a list is known as iterating.
+
+This loop prints each breed in dog_breeds:
+
+dog_breeds = ['french_bulldog', 'dalmation', 'shihtzu', 'poodle', 'collie']
+for breed in dog_breeds:
+    print(breed)
+    
+The general way of writing a for loop is:
+
+for <temporary variable> in <list variable>:
+    <action>
+    
+In our dog breeds example, breed was the temporary variable, dog_breeds was the list variable, and print(breed) was the action performed on every item in the list.
+
+Our temporary variable can be named whatever we want and does not need to be defined beforehand. Each of the following code snippets does the exact same thing as our example:
+
+for i in dog_breeds:
+    print(i)
+for dog in dog_breeds:
+    print(dog)
+    
+Notice that in all of these examples the print statement is indented. Everything in the same level of indentation after the for loop declaration is included in the for loop, and run every iteration.
+
+If we forget to indent, we’ll get an IndentationError.
