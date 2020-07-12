@@ -1,0 +1,23 @@
+Using Range in Loops
+
+Often we won’t be iterating through a specific list, we’ll just want to do a certain action multiple times. For example, if we wanted to print out a "WARNING!" message three times, we would want to say something like:
+
+for i in <a list of length 3>:
+  print("WARNING!")
+  
+Notice that we need to iterate through a list of length 3, but we don’t care what’s in the list. To create these lists of length n, we can use the range function. range takes in a number n as input, and returns a list from 0 to n-1. For example:
+
+zero_thru_five = range(6)
+# zero_thru_five is now [0, 1, 2, 3, 4, 5]
+zero_thru_one = range(2)
+# zero_thru_one is now [0, 1]
+
+So, an easy way to accomplish our "WARNING!" example would be:
+
+for i in range(3):
+  print("WARNING!")
+
+example:
+promise = "I will not chew gum in class"
+for i in range(5):
+  print(promise)
