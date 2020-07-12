@@ -1,0 +1,24 @@
+Infinite Loops
+
+We’ve iterated through lists that have a discrete beginning and end. However, let’s consider this example:
+
+my_favorite_numbers = [4, 8, 15, 16, 42]
+
+for number in my_favorite_numbers:
+  my_favorite_numbers.append(1)
+  
+What happens here? Every time we enter the loop, we add a 1 to the end of the list that we are iterating through. As a result, we never make it to the end of the list! It keeps growing!
+
+A loop that never terminates is called an infinite loop. These are very dangerous for your code!
+
+A program that hits an infinite loop often becomes completely unusable. The best course of action is to never write an infinite loop.
+
+Note: If you accidentally stumble into an infinite loop while developing on your own machine, you can end the loop by using control + c to terminate the program. If you’re writing code in our online editor, you’ll need to refresh the page to get out of an infinite loop!
+
+students_period_A = ["Alex", "Briana", "Cheri", "Daniele"]
+students_period_B = ["Dora", "Minerva", "Alexa", "Obie"]
+
+for student in students_period_A:
+  students_period_B.append(student)
+  #if you change B to A, you'll get an infinite loop
+  print(student)
