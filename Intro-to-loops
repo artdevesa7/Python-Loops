@@ -1,0 +1,26 @@
+Introduction to Loops
+Suppose we want to print() each item from a list of dog_breeds. We would need to use the following code snippet:
+
+dog_breeds = ['french_bulldog', 'dalmatian', 'shihtzu', 'poodle', 'collie']
+
+print(dog_breeds[0])
+print(dog_breeds[1])
+print(dog_breeds[2])
+print(dog_breeds[3])
+print(dog_breeds[4])
+This seems inefficient. Luckily, Python (and most other programming languages) gives us an easier way of using, or iterating through, every item in a list. We can use loops! A loop is a way of repeating a set of code many times.
+
+In this lesson, we’ll be learning about:
+
+Loops that let us move through each item in a list, called for loops
+Loops that keep going until we tell them to stop, called while loops
+Loops that create new lists, called list comprehensions
+
+Example:
+
+dog_breeds = ['french_bulldog', 'dalmatian', 'shihtzu', 'poodle', 'collie']
+
+for breed in dog_breeds:
+    print(breed)
+    
+This will print each breed in dog_breeds.
